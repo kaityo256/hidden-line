@@ -20,6 +20,10 @@ python3 hidden_line.py
 convert -delay 3 -loop 0 image.*.png rotate.gif
 ```
 
+Google Colabで試すことができるサンプルもあります。
+
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/kaityo256/hidden-line/blob/main/hidden_line.ipynb)
+
 ## LICENSE
 
 MIT
