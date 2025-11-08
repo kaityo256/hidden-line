@@ -131,11 +131,18 @@ def main():
     R = rotateX(R, 30)
     width = 512
     height = 512
+    images = []
     for i in range(30):
         img = draw(R, width, height, points, edges)
+        images.append(img)
         R = rotateX(R, 3)
+    for i in range(30):
+        img = draw(R, width, height, points, edges)
+        images.append(img)
+        R = rotateY(R, 3)
+    for i in range(len(images)):
         filename = f"image.{i:03d}.png"
-        img.save(filename)
+        images[i].save(filename)
         print(filename)
 
 
